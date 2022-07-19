@@ -2,6 +2,7 @@ import React from "react";
 import cities from "../lib/city.list.json";
 import Link from "next/link";
 import Router from "next/router";
+import currentC from "./currentC";
 
 export default function SearchBox({ placeholder }) {
   const [query, setQuery] = React.useState("");
@@ -46,6 +47,7 @@ export default function SearchBox({ placeholder }) {
   };
 
   return (
+    <div className="container">
     <div className="search">
       <input
         type="text"
@@ -76,5 +78,7 @@ export default function SearchBox({ placeholder }) {
         </ul>
       )}
     </div>
+     
+     </div>
   );
 }
