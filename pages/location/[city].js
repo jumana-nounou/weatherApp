@@ -72,6 +72,8 @@ const getHourlyWeather = (hourlyData, timezone) => {
   return todaysData;
 };
 
+
+
 export default function City({
   city,
   weather,
@@ -83,7 +85,7 @@ export default function City({
   return (
     <>
       <Head>
-        <title>{city.name} Weather - Next Weather App</title>
+        <title>{city.name}Weather App</title>
       </Head>
 
       <div className="page-wrapper">

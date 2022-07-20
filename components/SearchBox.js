@@ -2,7 +2,6 @@ import React from "react";
 import cities from "../lib/city.list.json";
 import Link from "next/link";
 import Router from "next/router";
-import currentC from "./currentC";
 
 export default function SearchBox({ placeholder }) {
   const [query, setQuery] = React.useState("");

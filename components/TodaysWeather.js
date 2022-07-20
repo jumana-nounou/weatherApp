@@ -2,13 +2,13 @@ import moment from "moment-timezone";
 import React from "react";
 import Image from "next/image";
 
-export default function TodaysWeather({ city, weather, timezone }) {
+export default function TodaysWeather({ city,weather, timezone }) {
   return (
     <div className="today">
       <div className="today__inner">
         <div className="today__left-content">
           <h1>
-            {city.name} ({city.country})
+            {city.name} 
           </h1>
 
           <h2>
