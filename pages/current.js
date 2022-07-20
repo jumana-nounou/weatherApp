@@ -1,11 +1,11 @@
-// import React from "react";
-// //import TodaysWeather from "../../components/TodaysWeather";
-// //import HourlyWeather from "../../components/HourlyWeather";
-// //import WeeklyWeather from "../../components/WeeklyWeather";
-// import Head from "next/head";
-// //import SearchBox from "../../components/SearchBox";
-// import moment from "moment-timezone";
-// import Link from "next/link"
+import React from "react";
+//import TodaysWeather from "../../components/TodaysWeather";
+//import HourlyWeather from "../../components/HourlyWeather";
+//import WeeklyWeather from "../../components/WeeklyWeather";
+import Head from "next/head";
+//import SearchBox from "../../components/SearchBox";
+import moment from "moment-timezone";
+import Link from "next/link"
 
 // export async function getServerSideProps() {
   
@@ -45,64 +45,64 @@
 //   return todaysData;
 // };
 
-// export default function current({
-//   city,
-//   weather,
-//   currentWeather,
-//   hourlyWeather,
-//   weeklyWeather,
-//   timezone,
-// }) {
+export default function current({
+  city,
+  weather,
+  currentWeather,
+  hourlyWeather,
+  weeklyWeather,
+  timezone,
+}) {
 
 
-//   return (
-//     <div>
-//       <Head>
-//         <title>Weather App</title>
-//       </Head>
-//       <div key={city}className="home">
-//       <div className="container">
-//       <Link href="/">
-//             <a className="back-link">&larr; Home</a>
-//           </Link>
+  return (
+    <div>
+      <Head>
+        <title>Weather App</title>
+      </Head>
+      <div key={city}className="home">
+      <div className="container">
+      <Link href="/">
+            <a className="back-link">&larr; Home</a>
+          </Link>
           
-//     </div>
+    </div>
 
-//         </div>
+        </div>
 
-//       </div>
+      </div>
     
-//   );
-// }
+  );
+}
 
 
 
-// // const [locRes, weatherRes] = await Promise.all([
-// //     fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.API_KEY_IP}`), 
-// //     fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLng}&appid=${process.env.API_KEY}&exclude=minutely&units=metric`)
-// //   ]);
-// //   const [locData, weatherData] = await Promise.all([
-// //     locRes.json(), 
-// //     weatherRes.json()
-// //   ]);
+// const [locRes, weatherRes] = await Promise.all([
+//     fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.API_KEY_IP}`), 
+//     fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLng}&appid=${process.env.API_KEY}&exclude=minutely&units=metric`)
+//   ]);
+//   const [locData, weatherData] = await Promise.all([
+//     locRes.json(), 
+//     weatherRes.json()
+//   ]);
 
 
 
-// // const getCityId = (param) => {
-// //   const cityParam = param.trim();
-// //   // get the id of the city
-// //   const splitCity = cityParam.split("-");
-// //   const id = splitCity[splitCity.length - 1];
+// const getCityId = (param) => {
+//   const cityParam = param.trim();
+//   // get the id of the city
+//   const splitCity = cityParam.split("-");
+//   const id = splitCity[splitCity.length - 1];
 
-// //   if (!id) {
-// //     return null;
-// //   }
+//   if (!id) {
+//     return null;
+//   }
 
-// //   const city = cities.find((city) => city.id.toString() == id);
+//   const city = cities.find((city) => city.id.toString() == id);
 
-// //   if (city) {
-// //     return city;
-// //   } else {
-// //     return null;
-// //   }
-// // };
+//   if (city) {
+//     return city;
+//   } else {
+//     return null;
+//   }
+// };
